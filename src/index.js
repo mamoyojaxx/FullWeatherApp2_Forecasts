@@ -70,3 +70,23 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", onSearch);
 
 searchCity("Harare");
+
+function showForecast(){
+let days = ['Tue', 'Wed','Thu','Fri','Sat'];
+let forecastinfo = ""
+
+days.forEach(function (day){
+forecastinfo = forecastinfo + `<div class = "app-forecast-day">
+    <div class = "app-forecast-date">${day}</div> 
+    <div class = "app-forecast-icon">🌦️</div>
+    <div class = "app-forecast-temps">
+        <div class = "app-forecast-temp">  
+        <strong>15°</strong></div>
+        <div class = "app-forecast-temp"> 9°</div>
+</div></div>`;
+});
+
+let forecast = document.querySelector("#app-forecast");
+forecast.innerHTML = forecastinfo;
+}
+showForecast();
