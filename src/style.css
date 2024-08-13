@@ -1,0 +1,97 @@
+body{
+    background-color: #e8e6e6;;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  font-style: italic;
+}
+.logo{
+    display: flex;
+}
+.fwalogo{
+    margin: 10px;
+    width: 100px; 
+    height:100px
+}
+.fwa{
+    margin-top: 50px;
+}
+.weather_app{
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 30px 50px rgba(111, 110, 113, 0.08);
+    border-radius: 30px;
+}
+header{
+    border-bottom: 1px solid #e8e6e6;
+    padding: 0 0 30px 0
+}
+a{
+    color: #428ac9;   
+}
+.search-form-input{
+    background-color:#e8e6e6;
+    border: none;
+    width: 70%;
+    border-radius: 10px;
+    padding:15px 20px;
+    font-size: 16px;
+}
+
+.search-form-button{
+    background-color: #428ac9;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding:15px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 20%;
+}
+main{
+    padding: 30px 0
+}
+.app_data{
+    display: flex;
+    justify-content: space-between;
+}
+.app_city{
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+.app_details{
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.app_details strong{
+    color: #191970;
+}
+.app_temp_container{
+    display: flex;
+}
+.app_icon{
+    width: 90px;
+    height: 90px;
+  
+}
+.app_temp{
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: bold;
+}
+.app_unit{
+    margin-top: 6px;
+    font-size: 30px;
+}
+
+footer{
+    border-top: 1px solid #e8e6e6;
+    padding: 30px 0 0 0;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+}

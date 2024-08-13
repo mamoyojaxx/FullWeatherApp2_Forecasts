@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App1</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+<div class = "weather_app">
+    <header>
+        <div class = "logo">
+        <img src = "images/weather_logo.png" alt="logo" class = "fwalogo"/>
+        <h1 class="fwa">Full Weather App</h1>
+    </div>
+        <form class = "search-form" id="search-form">
+            <input type="search" name="city" placeholder="Enter a city" required class = "search-form-input" id = "search-form-input">
+            <input type="submit" value="Search" class = "search-form-button">
+        </form>
+    </header>
+    <main>
+        <div class = "app_data">
+        <div>
+            <h1 class="app_city" id="city"></h1>
+            <p class="app_details">
+               <span id = "time"></span>  <span id="state"></span>
+                <br>
+                Humidity: <strong id="hum"></strong> 
+                Windspeed: <strong id="speed"></strong>
+            </p>
+        </div>
+        <div class = "app_temp_container">
+        <div id = "app-icon"></div>
+        <div class = "app_temp" id = "app_temp"></div>
+        <div class = "app_unit">°C</div> 
+        </div>
+    </div>
+    </main>
+    <footer>This project has been done by <a href="https://github.com/mamoyojaxx" target="_blank" rel="noreferrer">RJ Mtomba</a> is <a href="https://github.com/mamoyojaxx/FullWeatherApp1" target="_blank" rel="noreferrer">open-sourced on Github</a> and  <a href="https://fulllweatherapp1.netlify.app/" target="_blank" rel="noreferrer"> hosted on Netlify</a></footer>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
