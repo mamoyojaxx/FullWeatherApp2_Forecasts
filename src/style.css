@@ -132,6 +132,16 @@ footer{
       margin: 15px auto;
       padding: 15px;
     }
+    .search-form-button{
+        background-color: #428ac9;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding:15px 20px;
+        font-size: 14px;
+        margin-left: 10px;
+        
+    }
     
     .app-forecast-date{
         text-align: center;
