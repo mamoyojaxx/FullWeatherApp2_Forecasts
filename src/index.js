@@ -26,6 +26,8 @@ function showWeatherData(response){
    let icon = document.querySelector("#app-icon");
    let iconinfo = `<img src="${response.data.condition.icon_url}" alt="weather-icon" class="app_icon">`
    icon.innerHTML = iconinfo;
+
+   getForecastData(cityinfo);
 }
 
 function formatDate(date) {
@@ -71,7 +73,16 @@ searchForm.addEventListener("submit", onSearch);
 
 searchCity("Harare");
 
-function showForecast(){
+function getForecastData(city){
+  let apiKey = "d001310fae770o7ftaaab3f4b5974a90";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`
+  axios.get(apiURL).then(showForecast);
+}
+
+
+function showForecast(response){
+console.log(response.data);
+
 let days = ['Tue', 'Wed','Thu','Fri','Sat'];
 let forecastinfo = ""
 
