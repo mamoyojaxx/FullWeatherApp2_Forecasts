@@ -132,11 +132,27 @@ footer{
       margin: 15px auto;
       padding: 15px;
     }
-    .app-forecast{
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap */
-        justify-content: space-between; /* Adjust spacing as needed */
-        margin-top: 15px; /* Reduce top margin */
-        margin-bottom: 15px; /* Add bottom margin if necessary */
+    
+    .app-forecast-date{
+        text-align: center;
+        font-size: 10px;
+        color: rgba(0,0,0,0.6);
+        line-height: 15px;
+        margin-bottom: 10px;
     }
+    .app-forecast-icon{
+           width: 65px;
+           height: 65px;
+           display: block;
+           margin: 0 auto;
+    }
+    .app-forecast-temps{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 10px;
+        color: #191970;
+        display: flex;
+        justify-content: center;
+    }
+
   }
